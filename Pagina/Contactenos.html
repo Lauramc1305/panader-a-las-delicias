@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <section id="contacto" class="contacto">
+      <h1>Contactenos</h1>
+      <p>¿Tienes alguna pregunta, pedido especial o quieres más información?
+        ¡Escríbenos! En Panadería Las Delicias estamos para ayudarte.
+        Completa el formulario o contáctanos directamente por teléfono o correo.</p>
+
+          <form id="form-contacto" class="formulario-contacto">
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+            <button type="submit">Enviar</button>
+          </form>
+        <p id="mensaje-confirmacion"> Sus datos han sido registrados. </p>
+        </section>
+        <script src="main.js"></script>
+      </body>
+</html>
