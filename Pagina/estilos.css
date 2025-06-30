@@ -433,6 +433,9 @@ nav button {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 300px;
       position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   
     }
     .login-container h2 {
@@ -448,17 +451,33 @@ nav button {
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
+    .forgot-password {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .forgot-password a {
+      font-size: 0.9em;
+      color: #f864ae;
+      text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+
     .login-container button {
       width: 100%;
       padding: 10px;
-      background-color: #3498db;
+      background-color:#f864ae ;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
     .login-container button:hover {
-      background-color: #2980b9;
+      background-color: #ade4fd;
     }
     .message {
       margin-top: 10px;

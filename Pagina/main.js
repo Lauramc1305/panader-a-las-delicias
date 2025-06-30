@@ -1,18 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Módulo formulario contacto
   const form = document.getElementById('form-contacto');
   const mensaje = document.getElementById('mensaje-confirmacion');
 
-  mensaje.style.display = 'none';
+  if (mensaje) mensaje.style.display = 'none';
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault(); 
+  if (form) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
 
-    const confirmado = confirm('¿Quieres enviar el formulario?');
-    if (!confirmado) return;
+      const confirmado = confirm('¿Quieres enviar el formulario?');
+      if (!confirmado) return;
 
-   
-    mensaje.style.display = 'block';
+      if (mensaje) mensaje.style.display = 'block';
+      form.reset();
+    });
+  }
 
-    form.reset();
-  });
+  // Módulo botones menú
+  const btnIniciarSesion = document.getElementById('btn-iniciar-sesion');
+  const btnRegistrarse = document.getElementById('btn-registrarse');
+  const btnCarrito = document.getElementById('btn-carrito');
+
+  if (btnIniciarSesion) {
+    btnIniciarSesion.addEventListener('click', () => {
+      window.location.href = 'inicio-sesion.html';
+    });
+  }
+
+  if (btnRegistrarse) {
+    btnRegistrarse.addEventListener('click', () => {
+      window.location.href = 'registro.html';
+    });
+  }
+
+  if (btnCarrito) {
+    btnCarrito.addEventListener('click', () => {
+      window.location.href = 'carrito.html';
+    });
+  }
 });
